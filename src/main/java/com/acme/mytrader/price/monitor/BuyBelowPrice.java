@@ -39,6 +39,12 @@ public class BuyBelowPrice implements PriceListener {
 		this.executionService = executionService;
 	}
 	
+	/**
+	 * Receives stock price updates for the PriceSource
+	 * 
+	 * @param security is the stock that was just updated
+	 * @param price is the updated stock price
+	 */
 	@Override
 	public void priceUpdate(String security, double price) {
 		// Checks if 'security' is not null 
@@ -89,7 +95,7 @@ public class BuyBelowPrice implements PriceListener {
 	}
 	
 	/**
-	 * Triggers buy other in ExecutionService
+	 * Triggers buy order in ExecutionService
 	 * 
 	 * @param value
 	 * @param errorMessage
