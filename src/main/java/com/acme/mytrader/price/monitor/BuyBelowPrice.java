@@ -11,11 +11,11 @@ import com.acme.mytrader.price.PriceListener;
  */
 public class BuyBelowPrice implements PriceListener {
 	
-	private String security;
-	private double price;
-	private int volume;
+	private final String security;
+	private final double price;
+	private final int volume;
 	
-	private ExecutionService executionService;
+	private final ExecutionService executionService;
 	
 	/**
 	 * Setting the criteria to trigger and execute to buy order
