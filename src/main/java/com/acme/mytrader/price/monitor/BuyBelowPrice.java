@@ -40,7 +40,7 @@ public class BuyBelowPrice implements PriceListener {
 	}
 	
 	/**
-	 * Receives stock price updates for the PriceSource
+	 * Receives stock price updates from the PriceSource
 	 * 
 	 * @param security is the stock that was just updated
 	 * @param price is the updated stock price
